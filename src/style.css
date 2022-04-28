@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hello {
+    color: white;
+}
+
+#content {
+    border: 1px solid black;
+    margin: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.foodimg {
+    width: 50px;
+    
+}
+
+.food-box img {
+    width: 50px;
+}
