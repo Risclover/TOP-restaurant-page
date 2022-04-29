@@ -35,7 +35,7 @@ function homeBox() {
     hours.appendChild(
         hourPart(
             'SUN',
-            '19am-9pm'
+            '10am-9pm'
         )
     )
     hours.appendChild(
