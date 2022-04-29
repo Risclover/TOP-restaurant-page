@@ -5,58 +5,276 @@
 }
 
 body, html {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(93, 130, 165);
     width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+
 }
 
 main {
-    width: 100%;
+    padding: 30px;
+}
+
+.menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 ul {
-    display: flex;
     list-style-type: none;
+    font-size: 22px;
+}
+
+.hours {
+    width: 50%;
+    margin: 20px auto;
 }
 
 li {
-    margin: 20px;
+    padding: 5px;
 }
 
-li:hover {
+.header {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.header h1 {
+    font-family: 'Courgette', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 70px;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.tabs {
+    width: auto;
+    margin: 0 auto;
+}
+
+.tab {
+    text-transform: uppercase;
+    border: 0;
+    font-size: 30px;
+    padding: 15px 30px 10px 30px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Rubik', sans-serif;
+    transition: 0.5s ease;
+    font-weight: 600;
+}
+
+.tab:hover {
     cursor: pointer;
 }
 
-.title {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: black;
+.tab-active {
+    text-decoration: underline;
 }
 
-.hello {
+.main-box {
+    font-size: 26px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.home-box .home-title h1 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Courgette', sans-serif;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.home-box p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.food-grid, .main-box {
     color: white;
+    max-width: 750px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.438);
+    border: 1px solid white;
 }
 
-#content {
-    border: 1px solid black;
-    margin: 20px;
+.food-grid {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.food-title h1 {
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Courgette', sans-serif;
+    font-size: 70px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.food-box {
+    margin: 20px auto;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: flex-start;
+}
+
+.food-head {
     width: 100%;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
 }
 
-.foodimg {
-    width: 50px;
+h2, h3 {
+    margin: 3px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+
+img {
+    width: 125px;
+    margin-right: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    padding: 20px 30px;
+    max-width: 450px;
+    margin: 30px auto;
+    background-color: rgb(93, 130, 165);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+input, label, textarea {
+    margin: 5px 0;
+}
+
+label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details li {
+    font-size: 28px;
+}
+
+input[type='submit'] {
+    font-family: 'Rubik', sans-serif;
+    padding: 15px;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+input[type='submit']:hover {
+    color: white;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 5px;
+    }
+    main {
+        padding: 5px;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .home-box p, li, label, input {
+        font-size: 16px;
+    }
+
+    form {
+        margin: 15px auto;
+    }
+    .food-grid, .home-box {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .food-box {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
     
-}
+    .food-image {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100px;
+    }
 
-.food-box img {
-    width: 50px;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .tab {
+        font-size: 20px;
+
+    }
+    .food-title h1 {
+        font-size: 40px;
+    }
 }
