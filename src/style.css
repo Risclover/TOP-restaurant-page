@@ -80,6 +80,7 @@ li {
 
 .tab:hover {
     cursor: pointer;
+    color: rgb(93, 130, 165);
 }
 
 .tab-active {
