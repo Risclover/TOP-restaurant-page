@@ -5,7 +5,6 @@ const pageLoad = () => {
     const body = document.createElement('div');
 
     body.classList.add('bodydiv');
-    
     content.appendChild(body);
 }
 
